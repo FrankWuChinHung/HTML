@@ -31,59 +31,8 @@
             if (numbers.some(isNaN)) return false;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     </script>
-
-
-
-
-
-    // 取出第一个字符和第二个字符
-    const firstChar = id[0];
-    const secondChar = id[1];
-
-    // 如果第一个字符不是英文字母，或者第二个字符不是数字 1 或 2，则不合法
-    if (!/[A-Z]/.test(firstChar) || !/[12]/.test(secondChar)) return false;
-
-    // 将剩余的字符串转换为数字
-    const numbers = id.substring(2).split('').map(ch => parseInt(ch, 10));
-
-    // 如果任何一个字符不是数字，则不合法
-    if (numbers.some(isNaN)) return false;
-
-    // 将身份证号码的前九位数字和字母对应的数字相乘，并求和
-    const sum = numbers.reduce((acc, cur, idx) => {
-    // 将英文字母 A-Z 对应的数字为 10-35
-    if (idx === 0) return acc + (firstChar.charCodeAt(0) - 65) * 10;
-    return acc + cur * (9 - idx);
-    }, 0);
-
-    // 取出最后一位数字，并根据规则判断是否合法
-    const checkCode = id[9];
-    if (checkCode === 'A') return sum % 10 === 0;
-    return checkCode === (10 - sum % 10).toString();
-    }
-
 
 
 </head>
