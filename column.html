@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多欄版面</title>
+
+    <style>
+        body {
+            background-image: url(image/Python-logo-notext.svg.png);
+            background-repeat: repeat;
+            /* background-size: 100% 100%; */
+            background-attachment: fixed;
+
+        }
+
+        .box1 {
+            column-count: 3;
+            column-gap: 2em;
+            column-rule: 5px double goldenrod;
+            border: 5px double goldenrod;
+            border-radius: 20px;
+            width: 1000px;
+            padding: 20px;
+            margin: 20px auto;
+            font-size: 20px;
+            background-image: url(image/Python-logo-notext.svg.png);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: right bottom;
+        }
+
+        .box2 {
+            column-width: 300px;
+            column-gap: 2em;
+            column-rule: 5px dashed rgb(0, 162, 255);
+            border: 5px double rgb(0, 162, 255);
+            border-radius: 20px;
+            width: 1000px;
+            padding: 20px;
+            margin: 20px auto;
+            font-size: 20px;
+            background-image: url(image/Python-logo-notext.svg.png);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: right bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box1">
+        Python（英國發音：/ˈpaɪθən/；美國發音：/ˈpaɪθɑːn/），是一種廣泛使用的直譯式、進階和通用的程式語言。Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計。它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，並且其本身擁有一個巨大而廣泛的標準庫。它的語言結構以及物件導向的方法，旨在幫助程式設計師為小型的和大型的專案編寫邏輯清晰的程式碼。
+
+        吉多·范羅蘇姆於1980年代後期開始研發Python，作為ABC語言的後繼者，它也可以被視為採用了叫做M-表達式的中綴表示法的一種LISP方言[29]。吉多·范羅蘇姆於1991年首次釋出 Python
+        0.9.0[30]。Python 2.0於2000 年釋出並引入了新功能。Python 3.0於2008年釋出，它是該語言的主要修訂版，並非完全向下相容。Python 2於2020年隨2.7.18版停止支援。
+
+        Python的設計哲學，強調程式碼的可讀性和簡潔的語法，尤其是使用空格縮排來劃分程式碼塊。相比於C或Java，Python讓開發者能夠用更少的代碼表達想法。
+
+        Python直譯器本身幾乎可以在所有的作業系統中執行，它的官方直譯器CPython是用C語言編寫的。Python是一個由社群驅動的自由軟體，目前由Python軟體基金會管理。Python是最受歡迎的程式語言之一。
+    </p>
+
+    <p class="box2">
+        Python的創始人吉多·范羅蘇姆，在1982年至1995年間，參與了荷蘭數學和電腦科學研究學會多個專案的工作。1989年的聖誕節期間，他決心開發一個新的指令碼解釋程式，作為ABC語言的繼承者，並且用它替代Unix
+        shell和C語言來進行系統管理，擔負與Amoeba作業系統之間的互動操作並進行例外處理[9]。他是BBC電視劇《Monty
+        Python的飛行馬戲團》的愛好者，所以選取了Python作為這個程式語言的名字。范羅蘇姆作為Python的主要開發者，獨自擔負這個專案的發展決策者職責，直到2018年7月12日，他宣布從終身仁慈獨裁者（BDFL）的職權上「永久休假」。他在2019年1月至11月參與了第一屆五人掌控委員會繼續領導專案發展。
+
+        在1991年2月，范羅蘇姆在alt.sources上釋出了最初程式碼（標記為版本0.9.0）[42]，這時就已經存在了帶繼承的類、例外處理、函式和核心資料類型list、dict、str等。在這個最初發行中就有了從Modula-3引進的模組系統[43]，它的異常模型也類似於Modula-3。在1994年1月Python達到了版本1.0。這個發行版主要新特徵是包括了由Amrit
+        Prem提供的函式語言程式設計工具lambda、map、filter和reduce[44]。Python
+        1.4增加了受Modula-3啟發的關鍵字參數，和對複數的內建支援，還包含了採取名字修飾的一種基本形式的資料隱藏。
+
+        Python 2.0於2000年10月16日發布，介入了列表推導式，這是從函式語言程式設計語言SETL和Haskell中引入的。它還向垃圾回收系統增加了環檢測演算法，並且支援Unicode[46]。Python
+        2.1支援了巢狀作用域，就像其他靜態作用域語言一樣[47]。Python
+        2.2的重大革新是將Python的類型（用C寫成）和類（用Python寫成）統一入一個層級，使得Python的物件模型成為純粹和一致的物件導向的模型[48]；還增加了迭代器[49]，受CLU和Icon啟發的生成器[50]，和描述器協定[51]。Python
+        2.4加入了集合資料類型，和函式修飾器[52]。Python 2.5加入了with語句[53]。
+
+        Python 3.0於2008年12月3日發布，它對語言做了較大修訂而不能完全後向相容[54]。Python 3發行包括了2to3實用工具，它（至少部份的）自動將Python 2程式碼轉換成Python
+        3程式碼[55]。Python 3的很多新特性後來也被移植到舊的Python 2.6/2.7版本中[56]。
+
+        Python 2.7的產品壽命結束日期最初設定為2015年，出於對大量的現存程式碼不能前向移植到Python 3的關切，而將對它的支援延期至2020年[57][58]。隨著Python
+        2的產品壽命結束，2022年3月14日釋出的macOS 12.3已經徹底移除了Python 2[59]。當前只有Python
+        3的穩定版本3.10、3.11和預覽版本3.12正在被完全支援，但仍提供對3.7、3.8和3.9版本的安全性修正[60]。
+
+        在2021年12月，活躍的Python核心開發者選舉Pablo Galindo Salgado、Petr Viktorin、Thomas Wouters、Gregory P. Smith和Brett
+        Cannon為2022年度「掌控委員會」的五位成員來領導這個專案[61]。
+    </p>
+
+
+</body>
+
+</html>

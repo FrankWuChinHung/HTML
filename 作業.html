@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model 作業</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 6px double rgb(236, 182, 8);
+            border-radius: 20px;
+            width: 1500px;
+            padding: 20px;
+            margin: 20px auto;
+            /* box-shadow: 10px 10px 10px gray; */
+        }
+
+        img {
+            box-sizing: border-box;
+            width: 500px;
+        }
+
+        figure {
+            border: 3px double rgb(21, 0, 255);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px;
+            float: left;
+            background-color: aliceblue;
+            text-shadow: 2px 2px 2px gray;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        dt {
+            font-style: italic;
+            font-size: 24px;
+            font-weight: 700;
+            /* padding: 1px; */
+            margin-bottom: 5px;
+        }
+
+        dd {
+            margin-bottom: 1px;
+            /* padding: 1px; */
+            line-height: 25px;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        /* div {
+            background-color: blanchedalmond;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <figure>
+            <a href="https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E8%97%8D%E9%B5%B2"><img
+                    src="image/Urocissa_caerulea.jpg" alt="台灣藍鵲" title="台灣藍鵲"></a>
+            <figcaption>
+                <p1 style="float: left;">台灣藍鵲</p1>
+                <p2 style="float: right;">---圖片取自維基百科---</p2>
+            </figcaption>
+        </figure>
+
+        <h1>台灣藍鵲</h1>
+        <br>
+        <dl>
+            <dt>學名：</dt>
+            <dd>Urocissa caerulea</dd>
+            <dt>俗名:</dt>
+            <dd>臺灣暗藍鵲</dd>
+            <dd>紅嘴山鵲</dd>
+            <dd>長尾山娘</dd>
+            <dd>或長尾津仔</dd>
+
+            <dt>分類:</dt>
+            <dd>界：動物界 Animalia</dd>
+            <dd>門：脊索動物門 Chordata</dd>
+            <dd>綱：鳥綱 Aves</dd>
+            <dd>目：雀形目 Passeriformes</dd>
+            <dd>科：鴉科 Corvidae</dd>
+            <dd>屬：藍鵲屬 Urocissa</dd>
+
+            <dt>分布:</dt>
+            <dd>海拔1,000公尺以下的地區，而海拔1,800公尺以下的中、低海拔闊葉林或次生林也有分布</dd>
+
+            <dt>形態描述:</dt>
+            <dd>臺灣藍鵲成年個體身長平均約63至68公分，其中尾羽平均約長34至42公分，翅膀平均約長18至21公分。成年個體重量平均約254至260公克。成年個體的喙和腳呈紅色，虹膜呈金黃色，頭至頸、胸部呈黑色，翅膀末端呈白色，身體其餘部分幾乎皆呈藍色，但尾下覆羽呈白色。尾羽部分，成年個體的兩根中央尾羽較長且末端呈白色，其他尾羽則是中段黑色、末段白色。
+            </dd>
+
+            <dt>行為生物學:</dt>
+            <dd>臺灣藍鵲多成群行動，一群約3至12隻，多由具親屬關係的個體組成。牠們的飛行時直線前進，且排列呈現出一定秩序。牠們的叫聲為聒噪之「嘎、嘎、嘎」聲，在群體中則以「迪笛——迪笛——」或「嘎嘎——穗」等叫聲互相叫喚，叫聲變化多端。牠們大多具有十分明顯而強悍的保護領域傾向，並會主動驅趕進入其領域的活動物件，且會集體進行該類行為。牠們有可能生活於同一領域長達數年。
+            </dd>
+
+            <dt>生存狀況:</dt>
+            <dd>國際自然保護聯盟瀕危物種紅色名錄中，國際鳥盟將臺灣藍鵲列為無須採取保育行動的鳥種。臺灣行政院農業委員會將臺灣藍鵲分為保育等級Ⅲ（意指其他應予保護之野生動物）的動物，任何捕捉或飼養行為皆違反相關法律。早年，臺灣藍鵲遭人大量獵捕，後來因保護妥善，數量有增加，但近年來，臺灣藍鵲在被網路票選為臺灣非官方國鳥（見社會文化一段）後，因知名度提升而遭人大量獵捕，棲地也被外來種紅嘴藍鵲入侵，甚至還有臺灣藍鵲與紅嘴藍鵲同巢育雛的現象。
+            </dd>
+
+            <dt>社會文化:</dt>
+            <dd>臺灣藍鵲是臺灣原住民鄒、邵、布農等族的神鳥，鄒語稱為Teofsi'za、邵語稱為Fitfit、布農語稱為Lalinutaz（郡社群）。在南島語族共有的大洪水神話中，很久以前族人因大洪水瀕臨滅族，臺灣藍鵲犧牲自己帶回火種挽救族人（有些故事的版本則認為犧牲自己帶回火種的神鳥是紅嘴黑鵯）。2007年，臺灣永續生態協會、臺灣國際觀鳥協會與立委推動為期4個月的非官方網路「國鳥選拔」，逾百萬人投票。在帝雉、藍腹鷴、黃山雀和臺灣藍鵲4種臺灣特有鳥類中，臺灣藍鵲贏得初選。而臺北市、雲林縣的市鳥、縣鳥也是臺灣藍鵲。
+            </dd>
+
+        </dl>
+
+    </div>
+</body>
+
+</html>

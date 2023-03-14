@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS用法-自訂樣式</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+        @font-face {
+            font-family: font1;
+            src: url(fonts/JustOldFashion.ttf);
+        }
+
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            font-family: font2;
+            src: url(fonts/SCRIPTIN.ttf);
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+
+        .font3 {
+            font-family: 'Rubik Vinyl', cursive;
+        }
+
+        /* .st1 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .st2 {
+            color: #3300ff;
+            font-style: italic;
+        }
+
+        .st3 {
+            color: rgb(20, 88, 54);
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        .st4 {
+            color: rgb(224, 200, 21);
+        }
+
+        .st5 {
+
+            font-style: oblique;
+        }
+
+        .st6 {
+            color: rgb(66, 74, 70);
+            font-style: italic;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h1 class="st1">apple</h1>
+    <h2 class="st1 font1">banana</h2>
+    <h1 class="st2 font3">apple</h1>
+    <h2 class="st3">banana</h2>
+    <h1 class="st1 st2 st5 font2">apple</h1>
+    <h2 class="st2 st4 st5">banana</h2>
+    <p class="st6">Hello Frank!</p>
+
+
+
+</body>
+
+</html>
